@@ -4,8 +4,10 @@ sudo echo 'install vagrant...'
 wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
 
 cat << EOL | sudo tee /etc/apt/sources.list.d/hashicorp.sources
+
 Types: deb
 URIs: https://apt.releases.hashicorp.com/
+Suites: $(lsb_release -cs)
 Components: main
 Signed-By: /usr/share/keyrings/hashicorp-archive-keyring.gpg
 EOL
