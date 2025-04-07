@@ -17,8 +17,8 @@ sudo apt update && sudo apt install -y vagrant
 sudo sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources
 sudo apt install -y nfs-kernel-server
 sudo systemctl enable --now nfs-server
-sudo apt build-dep ruby-libvirt
+sudo apt build-dep -y ruby-libvirt
 sudo apt install -y ebtables dnsmasq-base
-sudo apt install -y install libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev unzip
+sudo apt install -y libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev unzip
 
 vagrant plugin install vagrant-libvirt
