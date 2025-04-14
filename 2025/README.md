@@ -1,15 +1,25 @@
-# 仮想環境のインストールスクリプト
+# 環境構築用スクリプト
 
-1. [install-libvirt.sh](./install-libvirt.sh) をダウンロード
-2. 次のコマンドを実行
- ```bash
-bash ~/Downloads/install-libvirt.sh
-```
-3. パスワードを聞かれた入力
-4. 一度PCを再起動
-
-5. [install-vagrant.sh](./install-vagrant.sh) をダウンロード
-6. 次のコマンドを実行
+## 日本語環境のインストールスクリプト
+1. 次のコマンドを実行
 ```bash
-bash ~/Downloads/install-vagrant.sh
+bash ./language-setup.sh
+```
+
+## Google Chrome のインストール
+1. 次のコマンドを実行
+```bash
+bash ./install-google-chrome.sh
+```
+
+## 仮想環境のインストールスクリプト
+1. 次のコマンドを実行
+ ```bash
+bash ./install-libvirt.sh
+```
+2. パスワードを聞かれた入力
+3. 一度PCを再起動
+4. 次のコマンドを実行
+```bash
+bash ./install-vagrant.sh
 ```
