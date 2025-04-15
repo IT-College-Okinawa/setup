@@ -13,6 +13,7 @@ sudo apt install -y fonts-noto-cjk
 sudo apt install -y fcitx5 fcitx5-config-qt fcitx5-data fcitx5-frontend-all fcitx5-mozc
 sudo im-config -n fcitx5
 im-config -n fcitx5
+sudo apt install -y gnome-shell-extension-manager
 
 echo 'rebooting...'
 sleep 3
