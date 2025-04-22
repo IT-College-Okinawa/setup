@@ -12,7 +12,7 @@ Components: main
 Signed-By: /usr/share/keyrings/hashicorp-archive-keyring.gpg
 EOL
 
-sudo apt update && sudo apt install -y vagrant
+sudo apt update && sudo apt install -y vagrant=2.4.3-1
 
 sudo sed -i 's/^Types: deb$/Types: deb deb-src/' /etc/apt/sources.list.d/ubuntu.sources
 sudo apt install -y nfs-kernel-server
