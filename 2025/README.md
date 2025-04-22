@@ -23,3 +23,7 @@ bash ./install-libvirt.sh
 ```bash
 bash ./install-vagrant.sh
 ```
+5. 次のコマンドを実行
+```bash
+bash ./modify-vagrant-templates.sh
+```

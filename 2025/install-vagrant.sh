@@ -20,6 +20,7 @@ sudo systemctl enable --now nfs-server
 sudo apt install -y build-essential
 sudo apt install -y ebtables dnsmasq-base libguestfs-tools
 sudo apt install -y libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev ruby-fog-libvirt unzip
+sudo apt update 
 sudo apt build-dep -y ruby-libvirt
 
 vagrant plugin install vagrant-libvirt
