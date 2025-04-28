@@ -6,3 +6,7 @@ sudo systemctl enable --now libvirtd
 
 sudo adduser "$(id -un)" libvirt
 sudo adduser "$(id -un)" kvm
+
+echo 'rebooting...'
+sleep 3
+sudo reboot
