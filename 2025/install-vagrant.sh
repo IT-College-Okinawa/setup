@@ -23,3 +23,10 @@ sudo apt install -y libxslt-dev libxml2-dev libvirt-dev zlib1g-dev ruby-dev ruby
 sudo apt build-dep -y ruby-libvirt
 
 vagrant plugin install vagrant-libvirt
+
+mkdir -p $HOME/.vagrant.d
+cat << EOL > $HOME/.vagrant.d/Vagrantfile
+Vagrant.configure('2') do |config|
+  config.ssh.forward_agent = true
+  config.vm.synced_folder ".", "/vagrant", type: "nfs", nfs_version: "4", nfs_udp: false
+EOL
